@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical"
+            tools:ignore="TextFields">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="65dp" />
+
+            <ImageView
+                android:id="@+id/logo_smart_things"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/logo"
+                app:srcCompat="@drawable/logo_smart_things" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/text_smart_things"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/name_app"
+                android:textColor="#00CC00"
+                android:textScaleX="1"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:id="@+id/Lo_edit_gmail"
+                android:backgroundTint="@color/naranja_O"
+                android:hint="@string/edit_gmail"
+                style="@style/edit_view" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:id="@+id/Lo_edit_name"
+                android:backgroundTint="@color/naranja_O"
+                android:hint="@string/edit_name"
+                style="@style/edit_view" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:id="@+id/Lo_edit_password"
+                android:backgroundTint="@color/naranja_O"
+                android:hint="@string/edid_password"
+                style="@style/edit_view" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <CheckBox
+                android:id="@+id/Lo_seve_pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/seva_password"
+                style="@style/edit_view"
+                android:checked="true"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Lo_bottom_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buttom_log_in"
+                    android:background="@drawable/style_buttom_one"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="40dp"
+                    />
+
+                <Button
+                    android:id="@+id/Lo_bottom_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buttom_register"
+                    android:background="@drawable/style_buttom_two"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="40dp"
+                    />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

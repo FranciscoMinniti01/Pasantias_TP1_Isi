@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Smart_Things</string>
+
+    <string name="logo">Logo Smart Things</string>
+    <string name="name_app">Smart Things</string>
+
+    //LogIn y Registro
+    <string name="edit_gmail">Gmail</string>
+    <string name="edit_name">Nombre de usuario</string>
+    <string name="edit_phone">Numero</string>
+    <string name="edid_password">Contraseña</string>
+    <string name="buttom_log_in">Entrar</string>
+    <string name="buttom_register">Registrarse</string>
+    <string name="buttom_google_register">Registrarse con Google</string>
+    <string name="seva_password">Guardar Contraseña</string>
+
+    //config
+    <string name="set_conec">Configurar la coneccion</string>
+    <string name="set_user">configuracion de usuario</string>
+    <string name="add_new_devise">Agregar nuevo dispositivo</string>
+    <string name="see_all_devise">Ver todos los dispositivos</string>
+    <string name="news">Novedades</string>
+    <string name="help">Centro de ayuda</string>
+    <string name="exit">Cerrar seccion</string>
+
+    //config coneccion
+    <string name="hostserver">Ingrese la IP del servidor</string>
+    <string name="userserver">Ingrese el usuario del servidor</string>
+    <string name="passwordserver">Ingrese la contraseña del servidor</string>
+    <string name="initConec">Iniciar la coneccion</string>
+    <string name="succesfulconec">Coneccion exitosa</string>
+    <string name="failedconec">Coneccion fallida</string>
+
+</resources>
