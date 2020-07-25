@@ -4,15 +4,26 @@
     <string name="logo">Logo Smart Things</string>
     <string name="name_app">Smart Things</string>
 
+    //ficher
+    <string name="prefsFile">com.example.smart_things.PREFERENCE_KEY</string>
+
     //LogIn y Registro
     <string name="edit_gmail">Gmail</string>
-    <string name="edit_name">Nombre de usuario</string>
     <string name="edit_phone">Numero</string>
     <string name="edid_password">Contraseña</string>
     <string name="buttom_log_in">Entrar</string>
+    <string name="buttom_verify_email">validar email</string>
     <string name="buttom_register">Registrarse</string>
     <string name="buttom_google_register">Registrarse con Google</string>
     <string name="seva_password">Guardar Contraseña</string>
+    <string name="successful_auth">Autenticacion Exitosa</string>
+    <string name="successful_regis">Registro Exitoso</string>
+    <string name="error_of_user_data">Se produjo un ERROR verifique los campos</string>
+    <string name="error_of_user_mail">Se produjo un ERROR este mail ya esta en uso</string>
+    <string name="AddHouse">Agregar a la lista</string>
+    <string name="FinishAdd">Termina</string>
+    <string name="AddFlors">Piso</string>
+    <string name="AddRoom">Habitacion</string>
 
     //config
     <string name="set_conec">Configurar la coneccion</string>
@@ -30,5 +41,8 @@
     <string name="initConec">Iniciar la coneccion</string>
     <string name="succesfulconec">Coneccion exitosa</string>
     <string name="failedconec">Coneccion fallida</string>
+
+    //Main Activity
+    <string name="buttom_config">Boton de configuracion</string>
 
 </resources>

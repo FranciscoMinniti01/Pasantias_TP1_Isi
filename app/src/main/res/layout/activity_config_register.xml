@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Autentication.LogInActivity">
+    tools:context=".Autentication.ConfigRegisterActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -15,7 +15,6 @@
         android:background="@color/colorPrimaryDark">
 
         <LinearLayout
-            android:id="@+id/Lo_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimaryDark"
@@ -57,68 +56,51 @@
                 android:layout_height="50dp" />
 
             <EditText
-                android:id="@+id/Lo_edit_gmail"
+                android:id="@+id/Re_edit_Floors"
                 android:backgroundTint="@color/naranja_O"
-                android:hint="@string/edit_gmail"
+                android:hint="@string/AddFlors"
+                android:layout_marginEnd="90dp"
+                android:layout_marginStart="40dp"
                 style="@style/edit_view" />
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="50dp" />
-
+                android:layout_height="20dp" />
 
             <EditText
-                android:id="@+id/Lo_edit_password"
+                android:id="@+id/Re_edit_Rooms"
                 android:backgroundTint="@color/naranja_O"
-                android:hint="@string/edid_password"
+                android:hint="@string/AddRoom"
                 android:inputType="textPassword"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="90dp"
                 style="@style/edit_view" />
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
 
-            <CheckBox
-                android:id="@+id/Lo_seve_pass"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/seva_password"
-                style="@style/edit_view"
-                android:checked="true"/>
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
-            <LinearLayout
+            <Button
+                android:id="@+id/add_flors_buttom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal">
+                android:background="@drawable/style_buttom_two"
+                android:text="@string/AddHouse"
+                style="@style/buttom"/>
 
-                <Button
-                    android:id="@+id/Lo_bottom_login"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/buttom_log_in"
-                    android:background="@drawable/style_buttom_one"
-                    android:layout_weight="1"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginStart="40dp"
-                    />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
 
-                <Button
-                    android:id="@+id/Lo_bottom_register"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/buttom_register"
-                    android:background="@drawable/style_buttom_two"
-                    android:layout_weight="1"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="40dp"
-                    />
-
-            </LinearLayout>
+            <Button
+                android:id="@+id/finish_config_buton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_buttom_one"
+                android:text="@string/FinishAdd"
+                style="@style/buttom"/>
 
             <Space
                 android:layout_width="match_parent"

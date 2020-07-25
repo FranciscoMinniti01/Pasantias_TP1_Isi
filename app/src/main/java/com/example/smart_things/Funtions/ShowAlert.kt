@@ -1,4 +1,4 @@
-package com.example.smart_things
+package com.example.smart_things.Funtions
 
 import android.app.AlertDialog
 import android.content.Context

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".Autentication.RegisterActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -66,31 +66,10 @@
                 android:layout_height="50dp" />
 
             <EditText
-                android:id="@+id/Re_edit_name"
-                android:backgroundTint="@color/naranja_O"
-                android:hint="@string/edit_name"
-                style="@style/edit_view" />
-
-            <!--
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
-
-            <EditText
-                android:id="@+id/edit_phone"
-                android:backgroundTint="@color/naranja_O"
-                android:hint="@string/edit_phone"
-                style="@style/edit_view" />
-            -->
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
-
-            <EditText
                 android:id="@+id/Re_edit_password"
                 android:backgroundTint="@color/naranja_O"
                 android:hint="@string/edid_password"
+                android:inputType="textPassword"
                 style="@style/edit_view" />
 
             <Space
@@ -109,6 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
+            <!--
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -147,6 +127,7 @@
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
+            -->
 
             <Button
                 android:id="@+id/Re_register_buttom"

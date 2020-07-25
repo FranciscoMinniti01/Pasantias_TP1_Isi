@@ -6,89 +6,91 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ScrollView
+    <LinearLayout
+        android:id="@+id/layout_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        app:layout_constraintBottom_toBottomOf="@+id/lookfor"
-        tools:ignore="MissingConstraints"
-        android:background="@color/colorPrimaryDark">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-127dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimaryDark"
-            android:orientation="vertical"
-            tools:ignore="TextFields">
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:id="@+id/logo_smart_things"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
                 android:background="@color/colorPrimaryDark"
-                android:orientation="horizontal">
+                android:contentDescription="@string/logo"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/logo_smart_things" />
 
-                <ImageView
-                    android:id="@+id/logo_smart_things"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:scaleType="fitCenter"
-                    android:layout_weight="1"
-                    android:background="@color/colorPrimaryDark"
-                    android:contentDescription="@string/logo"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    app:srcCompat="@drawable/logo_smart_things" />
+            <TextView
+                android:id="@+id/text_smart_things"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:text="@string/name_app"
+                android:textColor="#00CC00"
+                android:textScaleX="1"
+                android:textSize="45sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/text_smart_things"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@color/colorPrimaryDark"
-                    android:gravity="center"
-                    android:text="@string/name_app"
-                    android:textColor="#00CC00"
-                    android:textScaleX="1"
-                    android:textSize="45sp"
-                    android:textStyle="bold" />
-
-                <ImageButton
-                    android:id="@+id/config_buttom"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:scaleType="fitCenter"
-                    android:layout_marginTop="3dp"
-                    android:layout_gravity="center"
-                    android:background="@color/colorPrimaryDark"
-                    android:src="@drawable/config_buttom"/>
-
-            </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="25dp" />
-
+            <ImageButton
+                android:id="@+id/config_buttom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:background="@color/colorPrimaryDark"
+                android:contentDescription="@string/buttom_config"
+                android:scaleType="fitCenter"
+                android:src="@drawable/config_buttom" />
 
         </LinearLayout>
 
-    </ScrollView>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <ListView
+            android:id="@+id/List_Main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/lookfor"
+        android:id="@+id/layout_lookfor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
 
         <ImageButton
+            android:id="@+id/button_serch"
             android:layout_width="50dp"
             android:layout_height="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:background="@null"
             android:scaleType="fitCenter"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginBottom="5dp"
-            android:src="@drawable/botton_lupa"/>
+            android:src="@drawable/botton_lupa"
+            android:contentDescription="buttomSerch"/>
 
     </LinearLayout>
 

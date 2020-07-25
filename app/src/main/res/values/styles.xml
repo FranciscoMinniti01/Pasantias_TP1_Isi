@@ -41,7 +41,7 @@
         <item name="android:textAlignment">center</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/verde1</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">25dp</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textScaleX">1</item>
     </style>

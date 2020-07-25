@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConfigConecActivity">
+    tools:context=".Configuration.ConfigConecActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -71,7 +71,7 @@
                 android:text="@string/set_conec" />
 
             <EditText
-                android:id="@+id/edit_gmail"
+                android:id="@+id/edit_ip"
                 android:backgroundTint="@color/naranja_O"
                 android:hint="@string/hostserver"
                 style="@style/edit_view" />
@@ -81,7 +81,7 @@
                 android:layout_height="50dp" />
 
             <EditText
-                android:id="@+id/edit_name"
+                android:id="@+id/edit_use_server"
                 android:backgroundTint="@color/naranja_O"
                 android:hint="@string/userserver"
                 style="@style/edit_view" />
@@ -91,7 +91,7 @@
                 android:layout_height="50dp" />
 
             <EditText
-                android:id="@+id/edit_password"
+                android:id="@+id/edit_password_server"
                 android:backgroundTint="@color/naranja_O"
                 android:hint="@string/passwordserver"
                 style="@style/edit_view" />
@@ -101,7 +101,7 @@
                 android:layout_height="50dp" />
 
             <Button
-                android:id="@+id/buttom_exit"
+                android:id="@+id/buttom_conec"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_buttom_one"
