@@ -14,12 +14,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".Autentication.ConfigRegisterActivity"></activity>
-        <activity android:name=".Configuration.ConfigConecActivity" />
-        <activity android:name=".Configuration.ConfigActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Autentication.RegisterActivity" />
-        <activity android:name=".Autentication.LogInActivity">
+        <activity android:name=".Presentation.Devise.ViewDeviseActivity"></activity>
+        <activity android:name=".Presentation.Configurations.UserConfig.UserConfigActivity" />
+        <activity android:name=".Presentation.Configurations.ViewAllDevice.ViewAllDeviceActivity" />
+        <activity android:name=".Presentation.Auth.passwordRecover.PasswordRecoverActivity" />
+        <activity android:name=".Presentation.Configurations.AddDevise.AddDeviseActivity" />
+        <activity android:name=".Presentation.Configurations.ConecConfig.ConfigConecActivity" />
+        <activity android:name=".Presentation.Configurations.ConfigActivity" />
+        <activity android:name=".Presentation.Main.MainActivity" />
+        <activity android:name=".Presentation.Auth.Register.RegisterActivity" />
+        <activity android:name=".Presentation.Auth.LogIn.LogInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +32,7 @@
         </activity>
         <activity android:name=".MainListView.ListDevicesFuntions" />
 
-        <service android:name="org.eclipse.paho.android.service.MqttService"></service>
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
     </application>
 
 </manifest>

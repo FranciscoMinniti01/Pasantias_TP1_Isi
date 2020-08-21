@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Presentation.Configurations.ConfigActivity">
 
-    <ScrollView
+    <!--<ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="1dp"
@@ -71,92 +71,149 @@
                 android:layout_height="50dp" />
 
             <Button
-                android:id="@+id/buttom_config_conec"
+                android:id="@+id/buttom_restar_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_buttom_one"
-                android:text="@string/set_conec"
+                android:text="@string/restartEmail"
                 style="@style/buttom"/>
+
+            <LinearLayout
+                android:id="@+id/lineChangeEmail"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <EditText
+                    android:id="@+id/channge_edid_gmail"
+                    android:backgroundTint="@color/naranja_O"
+                    android:hint="@string/res_gmail"
+                    android:inputType="textEmailAddress"
+                    style="@style/edit_view" />
+
+                <Button
+                    android:id="@+id/buttom_change_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change"
+                    android:background="@drawable/style_buttom_two"
+                    style="@style/buttom"/>
+
+                <ProgressBar
+                    android:id="@+id/progres_change_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
             <Button
-                android:id="@+id/buttom_config_user"
+                android:id="@+id/buttom_restar_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_buttom_one"
-                android:text="@string/set_user"
+                android:text="@string/restartPassword"
                 style="@style/buttom"/>
+
+            <LinearLayout
+                android:id="@+id/lineChangePassword"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <EditText
+                    android:id="@+id/channge_edid_password"
+                    android:backgroundTint="@color/naranja_O"
+                    android:hint="@string/res_password"
+                    android:inputType="textEmailAddress"
+                    style="@style/edit_view" />
+
+                <Button
+                    android:id="@+id/buttom_change_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change"
+                    android:background="@drawable/style_buttom_two"
+                    style="@style/buttom"/>
+
+                <ProgressBar
+                    android:id="@+id/progres_change_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
             <Button
-                android:id="@+id/buttom_add_devise"
+                android:id="@+id/buttom_restar_nameuser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_buttom_one"
-                android:text="@string/add_new_devise"
+                android:text="@string/restartUserName"
                 style="@style/buttom"/>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
-
-            <Button
-                android:id="@+id/buttom_see_devise"
+            <LinearLayout
+                android:id="@+id/lineChangeUserName"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/style_buttom_one"
-                android:text="@string/see_all_devise"
-                style="@style/buttom"/>
+                android:visibility="gone">
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
 
-            <Button
-                android:id="@+id/buttom_news"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/style_buttom_one"
-                android:text="@string/news"
-                style="@style/buttom"/>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                <EditText
+                    android:id="@+id/channge_edid_UserName"
+                    android:backgroundTint="@color/naranja_O"
+                    android:hint="@string/res_username"
+                    android:inputType="textEmailAddress"
+                    style="@style/edit_view" />
 
-            <Button
-                android:id="@+id/buttom_help"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/style_buttom_one"
-                android:text="@string/help"
-                style="@style/buttom"/>
+                <Button
+                    android:id="@+id/buttom_change_UserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change"
+                    android:background="@drawable/style_buttom_two"
+                    style="@style/buttom"/>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                <ProgressBar
+                    android:id="@+id/progres_change_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="center" />
 
-            <Button
-                android:id="@+id/buttom_exit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/style_buttom_one"
-                android:text="@string/exit"
-                style="@style/buttom"/>
+            </LinearLayout>
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="200dp" />
 
-
         </LinearLayout>
 
-    </ScrollView>
+    </ScrollView>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

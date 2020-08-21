@@ -53,7 +53,7 @@
                     android:textStyle="bold" />
 
                 <ImageButton
-                    android:id="@+id/back_buttom"
+                    android:id="@+id/Devise_back_buttom"
                     android:layout_width="52dp"
                     android:layout_height="52dp"
                     android:scaleType="fitCenter"
@@ -68,86 +68,79 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_height="25dp" />
 
-            <Button
-                android:id="@+id/buttom_config_conec"
+
+            <EditText
+                android:id="@+id/DeviseName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/style_buttom_one"
-                android:text="@string/set_conec"
-                style="@style/buttom"/>
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColor="@color/naranja_O"
+                style="@style/titles"
+                android:textSize="35sp" />
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_height="25dp" />
 
-            <Button
-                android:id="@+id/buttom_config_user"
+            <EditText
+                android:id="@+id/DeviseType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/style_buttom_one"
-                android:text="@string/set_user"
-                style="@style/buttom"/>
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColor="@color/naranja_O"
+                android:layout_weight="1"
+                style="@style/titles"
+                android:textSize="25sp" />
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_height="25dp" />
 
-            <Button
-                android:id="@+id/buttom_add_devise"
+            <EditText
+                android:id="@+id/DeviseRoom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/style_buttom_one"
-                android:text="@string/add_new_devise"
-                style="@style/buttom"/>
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColor="@color/naranja_O"
+                android:layout_weight="1"
+                style="@style/titles"
+                android:textSize="25sp"/>
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_height="25dp" />
 
-            <Button
-                android:id="@+id/buttom_see_devise"
+            <EditText
+                android:id="@+id/DeviseFlor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/style_buttom_one"
-                android:text="@string/see_all_devise"
-                style="@style/buttom"/>
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColor="@color/naranja_O"
+                android:layout_weight="1"
+                style="@style/titles"
+                android:textSize="25sp"/>
 
             <Space
+                android:id="@+id/progres_space"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
+            <ProgressBar
+                android:id="@+id/progressBarviewdevise"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
             <Button
-                android:id="@+id/buttom_news"
+                android:id="@+id/buttom_delet_devise"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_buttom_one"
-                android:text="@string/news"
-                style="@style/buttom"/>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
-
-            <Button
-                android:id="@+id/buttom_help"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/style_buttom_one"
-                android:text="@string/help"
-                style="@style/buttom"/>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
-
-            <Button
-                android:id="@+id/buttom_exit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/style_buttom_one"
-                android:text="@string/exit"
+                android:text="@string/delet_de_devise"
                 style="@style/buttom"/>
 
             <Space

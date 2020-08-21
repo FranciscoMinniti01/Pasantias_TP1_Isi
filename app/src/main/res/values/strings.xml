@@ -7,23 +7,81 @@
     //ficher
     <string name="prefsFile">com.example.smart_things.PREFERENCE_KEY</string>
 
+    //view devise
+    <string name="delet_de_devise">Borrar</string>
+    <string name="Alert">Alerta</string>
+    <string name="yes">Aceptar</string>
+    <string name="no">Cancelar</string>
+    <string name="Sure">decea borrar este dispositivo?</string>
+    <string name="Saccessful">se borro exitosamente</string>
+    <string name="fallo">no se pudo borrar error:</string>
+
+    //Errores
+    <string name="Error">Error</string>
+    <string name="accept">Aceptar</string>
+
     //LogIn y Registro
     <string name="edit_gmail">Gmail</string>
-    <string name="edit_phone">Numero</string>
+    <string name="edit_name">Nombre</string>
     <string name="edid_password">Contraseña</string>
-    <string name="buttom_log_in">Entrar</string>
-    <string name="buttom_verify_email">validar email</string>
-    <string name="buttom_register">Registrarse</string>
-    <string name="buttom_google_register">Registrarse con Google</string>
     <string name="seva_password">Guardar Contraseña</string>
-    <string name="successful_auth">Autenticacion Exitosa</string>
-    <string name="successful_regis">Registro Exitoso</string>
+    //LogIn y Registro Errores
     <string name="error_of_user_data">Se produjo un ERROR verifique los campos</string>
     <string name="error_of_user_mail">Se produjo un ERROR este mail ya esta en uso</string>
-    <string name="AddHouse">Agregar a la lista</string>
-    <string name="FinishAdd">Termina</string>
-    <string name="AddFlors">Piso</string>
-    <string name="AddRoom">Habitacion</string>
+    <string name="empty_edit_email">Deve Ingresar un email</string>
+    <string name="empty_edit_password">Deve Ingresar un contraseña</string>
+    <string name="empty_edit_username">Deve Ingresar un Nombre</string>
+    <string name="invalid_email">El email es invalido</string>
+    <string name="passwords_dont_mach">Las contraseñas no son iguales</string>
+    <string name="error_tosent_verifi">Error al enviar la verificacion</string>
+    //LogIn
+    <string name="buttom_log_in">Entrar</string>
+    <string name="buttom_register">Registrarse</string>
+    <string name="buttom_olvidar_contraseña">As olvidado tu contraseña?</string>
+    <string name="successful_auth">Autenticacion Exitosa</string>
+    //Registro
+    <string name="edid_password1">Repetir Contraseña</string>
+    <string name="buttom_verify_email">Log In</string>
+    <!--<string name="buttom_google_register">Registrarse con Google</string>-->
+    <string name="successful_regis">Registro Exitoso</string>
+    <string name="verify">Verify</string>
+    <string name="verifyEmail">Verify email</string>
+    //changePassword
+    <string name="change_password">Cambiar la contraseña</string>
+    <string name="email_chang_password">se envio un mail de cambio de contraseña</string>
+
+    //Main Activity
+    <string name="buttom_config">Boton de configuracion</string>
+    <string name="Device_name">Nombre del dispositivo</string>
+    <string name="buttom_serch_device">botton buscar dispositivo</string>
+    <string name="failure_conec">Fallo la coneccion</string>
+    <string name="succesful_publish">Publicacion exitosa</string>
+    <string name="failure_publish">Fallo la publicacion</string>
+    <string name="unknown_message">llego un mensaje desconocido</string>
+    <string name="conec_lost">Se perdio la coneccion</string>
+    <string name="it_not_conec">no esta establecida la coneccion</string>
+    //config coneccion
+    <string name="hostserver">Ingrese la IP del servidor</string>
+    <string name="userserver">Ingrese el usuario del servidor</string>
+    <string name="passwordserver">Ingrese la contraseña del servidor</string>
+    <string name="initConec">Iniciar la coneccion</string>
+    <string name="succesfulconec">Coneccion exitosa</string>
+    <string name="failedconec">Coneccion fallida</string>
+    <string name="wait_to_disconnec">esperar un momento</string>
+    //config coneccion Main Activity
+    <string name="succesful_conec">Coneccion exitosa</string>
+
+    //add devices
+    <string name="Not_exits_devise">No existe el dispositivo</string>
+    <string name="add_edit_room">Habitacion</string>
+    <string name="add_edit_flow">Piso</string>
+    <string name="add_edit_type">Tipo</string>
+    <string name="add_edit_name">Nombre</string>
+    <string name="add_devise">Agregar dispositivo</string>
+    <string name="it_is_empty">esta vacio</string>
+    <string name="succesful_add_device">Se agrego exitosamente el dispositivo</string>
+    <string name="failure_add_device">fallo al agregar el dispositivo</string>
+    <string name="name_devise_exits">Este nombre de dispositivo ya existe</string>
 
     //config
     <string name="set_conec">Configurar la coneccion</string>
@@ -33,16 +91,15 @@
     <string name="news">Novedades</string>
     <string name="help">Centro de ayuda</string>
     <string name="exit">Cerrar seccion</string>
+    <string name="not_use_action">Accion no avilitada</string>
 
-    //config coneccion
-    <string name="hostserver">Ingrese la IP del servidor</string>
-    <string name="userserver">Ingrese el usuario del servidor</string>
-    <string name="passwordserver">Ingrese la contraseña del servidor</string>
-    <string name="initConec">Iniciar la coneccion</string>
-    <string name="succesfulconec">Coneccion exitosa</string>
-    <string name="failedconec">Coneccion fallida</string>
-
-    //Main Activity
-    <string name="buttom_config">Boton de configuracion</string>
+    //config user
+    <string name="change">Cambiar</string>
+    <string name="res_gmail">Nuevo Gmail</string>
+    <string name="res_password">Nuevo password</string>
+    <string name="res_username">Nuevo Nombre de usuario</string>
+    <string name="restartPassword">Cambiar contraseña</string>
+    <string name="restartEmail">Cambiar Email</string>
+    <string name="restartUserName">Cambiar Nombre de usuario</string>
 
 </resources>

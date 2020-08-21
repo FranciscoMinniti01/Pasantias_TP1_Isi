@@ -23,14 +23,14 @@
 
             <ImageView
                 android:id="@+id/logo_smart_things"
-                android:layout_width="0dp"
+                android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_gravity="center"
+                android:scaleType="fitCenter"
                 android:layout_weight="1"
                 android:background="@color/colorPrimaryDark"
                 android:contentDescription="@string/logo"
                 android:gravity="center"
-                android:scaleType="fitCenter"
+                android:layout_gravity="center"
                 app:srcCompat="@drawable/logo_smart_things" />
 
             <TextView
@@ -46,15 +46,16 @@
                 android:textStyle="bold" />
 
             <ImageButton
-                android:id="@+id/config_buttom"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="3dp"
-                android:background="@color/colorPrimaryDark"
-                android:contentDescription="@string/buttom_config"
+                android:id="@+id/All_back_buttom"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/config_buttom" />
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:src="@drawable/button_back"/>
 
         </LinearLayout>
 
@@ -63,7 +64,7 @@
             android:layout_height="20dp"/>
 
         <com.facebook.shimmer.ShimmerFrameLayout
-            android:id="@+id/MainShimmerView"
+            android:id="@+id/All_MainShimmerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -85,15 +86,14 @@
         </com.facebook.shimmer.ShimmerFrameLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/MainRecyclerView"
+            android:id="@+id/All_RecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="55dp"/>
+            android:layout_height="match_parent"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/layout_lookfor"
+        android:id="@+id/All_layout_lookfor"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_gravity="bottom"
@@ -102,7 +102,7 @@
         android:background="@color/colorPrimaryDark">
 
         <EditText
-            android:id="@+id/SerchMainDevise"
+            android:id="@+id/All_SerchMainDevise"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -112,10 +112,10 @@
             android:textAlignment="center"
             android:textColor="@color/naranja_O"
             android:textColorHint="@color/naranja_O"
-            android:textSize="25sp"/>
+            android:textSize="25dp"/>
 
         <ImageButton
-            android:id="@+id/button_serch1"
+            android:id="@+id/All_button_serch1"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:visibility="gone"
@@ -128,7 +128,7 @@
             android:contentDescription="@string/buttom_serch_device"/>
 
         <ImageButton
-            android:id="@+id/button_serch"
+            android:id="@+id/All_button_serch"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:visibility="visible"

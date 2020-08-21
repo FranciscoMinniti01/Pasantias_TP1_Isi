@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Autentication.RegisterActivity">
+    tools:context=".Presentation.Auth.Register.RegisterActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -59,6 +59,17 @@
                 android:id="@+id/Re_edit_gmail"
                 android:backgroundTint="@color/naranja_O"
                 android:hint="@string/edit_gmail"
+                android:inputType="textEmailAddress"
+                style="@style/edit_view" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:id="@+id/Re_edit_name"
+                android:backgroundTint="@color/naranja_O"
+                android:hint="@string/edit_name"
                 style="@style/edit_view" />
 
             <Space
@@ -69,6 +80,17 @@
                 android:id="@+id/Re_edit_password"
                 android:backgroundTint="@color/naranja_O"
                 android:hint="@string/edid_password"
+                android:inputType="textPassword"
+                style="@style/edit_view" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:id="@+id/Re_edit_password1"
+                android:backgroundTint="@color/naranja_O"
+                android:hint="@string/edid_password1"
                 android:inputType="textPassword"
                 style="@style/edit_view" />
 
@@ -137,9 +159,17 @@
                 android:text="@string/buttom_register"
                 style="@style/buttom"/>
 
+            <ProgressBar
+                android:id="@+id/Re_progressBar"
+                style="?android:attr/progressBarStyle"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="200dp" />
+
 
         </LinearLayout>
 

@@ -2,6 +2,9 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+//DAGGER
+//pply plugin: 'kotlin-kapt'
+
 //FIREBASE
 apply plugin: 'com.google.gms.google-services'
 
@@ -28,7 +31,7 @@ android {
     //MQTT
     repositories {
         maven {
-            url "https://repo.eclipse.org/content/repositories/paho-releases/"
+            url "https://repo.eclipse.org/content/repositories/paho-snapshots/"
         }
     }
 }
@@ -36,8 +39,8 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.0'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.google.firebase:firebase-firestore-ktx:21.5.0'
     testImplementation 'junit:junit:4.12'
@@ -49,18 +52,39 @@ dependencies {
 
     //Firebase AUTHENTICATION
     implementation 'com.google.firebase:firebase-auth:19.3.2'
-    implementation 'com.google.android.gms:play-services-auth:18.0.0'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
     //AUTH CON GOOGLE
-    implementation 'com.google.android.gms:play-services-auth:18.0.0'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
 
     //CLOUDFIRESTORE
     implementation 'com.google.firebase:firebase-firestore:21.5.0'
 
     //MQTT
+    /*//noinspection GradleCompatible
     implementation 'com.android.support:support-v4:28.0.0'
+    //noinspection GradleCompatible
     implementation 'com.android.support:localbroadcastmanager:28.0.0'
-    compile('org.eclipse.paho:org.eclipse.paho.android.service:1.0.2') {
+    compile('org.eclipse.paho:org.eclipse.paho.android.service:1.1.1') {
         exclude module: 'support-v4'
-    }
+    }*/
+    compile 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.4'
+    compile 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
 
+
+    //CORRUTINA
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.4'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0'
+
+    //RECYCLERVIEW
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    //implementation "androidx.recyclerview:recyclerview-selection:1.1.0-rc01"
+
+    //VIEWMODEL
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+    //grupo de implementación 'androidx.lifecycle', nombre: 'lifecycle-extensiones', versión: '2.2.0-alpha1'
+    //implementation 'androidx.lifecycle:lifecycle-extension:2.2.0'
+
+    //SHIMMER
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
 }

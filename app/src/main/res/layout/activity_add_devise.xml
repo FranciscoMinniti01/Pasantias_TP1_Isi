@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Presentation.Configurations.ConfigActivity">
+    tools:context=".Presentation.Configurations.AddDevise.AddDeviseActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -12,7 +12,7 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp"
         app:layout_constraintBottom_toBottomOf="@+id/lookfor"
-        tools:ignore="MissingConstraints"
+        tools:ignore="MissingConstraints,UnknownIdInLayout"
         android:background="@color/colorPrimaryDark">
 
         <LinearLayout
@@ -53,7 +53,7 @@
                     android:textStyle="bold" />
 
                 <ImageButton
-                    android:id="@+id/back_buttom"
+                    android:id="@+id/add_back_buttom"
                     android:layout_width="52dp"
                     android:layout_height="52dp"
                     android:scaleType="fitCenter"
@@ -66,94 +66,69 @@
 
             </LinearLayout>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
-
-            <Button
-                android:id="@+id/buttom_config_conec"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/style_buttom_one"
-                android:text="@string/set_conec"
-                style="@style/buttom"/>
+            <TextView
+                style="@style/titles"
+                android:text="@string/add_new_devise" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
-            <Button
-                android:id="@+id/buttom_config_user"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/style_buttom_one"
-                android:text="@string/set_user"
-                style="@style/buttom"/>
+            <EditText
+                android:id="@+id/edit_add_flow"
+                android:backgroundTint="@color/naranja_O"
+                android:hint="@string/add_edit_flow"
+                style="@style/edit_view" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
-            <Button
-                android:id="@+id/buttom_add_devise"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/style_buttom_one"
-                android:text="@string/add_new_devise"
-                style="@style/buttom"/>
+            <EditText
+                android:id="@+id/edit_add_room"
+                android:backgroundTint="@color/naranja_O"
+                android:hint="@string/add_edit_room"
+                style="@style/edit_view" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
-            <Button
-                android:id="@+id/buttom_see_devise"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/style_buttom_one"
-                android:text="@string/see_all_devise"
-                style="@style/buttom"/>
+            <EditText
+                android:id="@+id/edit_add_type"
+                android:backgroundTint="@color/naranja_O"
+                android:hint="@string/add_edit_type"
+                style="@style/edit_view" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
-            <Button
-                android:id="@+id/buttom_news"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/style_buttom_one"
-                android:text="@string/news"
-                style="@style/buttom"/>
+            <EditText
+                android:id="@+id/edit_add_name"
+                android:backgroundTint="@color/naranja_O"
+                android:hint="@string/add_edit_name"
+                style="@style/edit_view" />
 
             <Space
+                android:id="@+id/progreSpace"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
+            <ProgressBar
+                android:id="@+id/addProgres"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
             <Button
-                android:id="@+id/buttom_help"
+                android:id="@+id/add_device_buttom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/style_buttom_one"
-                android:text="@string/help"
+                android:text="@string/add_devise"
                 style="@style/buttom"/>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
-
-            <Button
-                android:id="@+id/buttom_exit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/style_buttom_one"
-                android:text="@string/exit"
-                style="@style/buttom"/>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="200dp" />
-
 
         </LinearLayout>
 
