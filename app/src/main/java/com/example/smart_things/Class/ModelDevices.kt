@@ -6,4 +6,5 @@ data class ModelDevices(var Room:String? = null,
                         var Floor:String? = null,
                         var Name:String? = null,
                         var Type: String? = null,
-                        var State:Boolean = false) : Serializable
+                        var State:Boolean = false,
+                        var RSSI: String? = null) : Serializable

@@ -74,10 +74,10 @@ class MainPresenter(context: Context):MainInterface.MainPresenter {
     override fun publis(Topic:String,typeDevise:String,Mensaje:String) {
         mqttFuntions.publish(Topic,typeDevise,Mensaje,null,object:MQTTinterface.MQTTcallback{
             override fun AutheonSuccessful() {
-                TODO("Not yet implemented")
+                view?.MainToast("Init joiner")
             }
             override fun AutheonFailure(message: String?) {
-                TODO("Not yet implemented")
+                view?.MainToast(context.getString(R.string.failure_publish) )
             }
         })
     }
@@ -117,14 +117,21 @@ class MainPresenter(context: Context):MainInterface.MainPresenter {
         }
     }
 
+    fun getrssi(message: MqttMessage?):String?{
+        val GETRSSI : String = "PlatRssi "
+        val index = message.toString().indexOf(GETRSSI)
+        val rssi: String? = if (index == -1) null else message.toString().substring(index+GETRSSI.length)
+        return rssi
+    }
+
     override fun eventMqtt() {
         mqttFuntions.callback(object :MqttCallback{
             override fun messageArrived(topic: String?, message: MqttMessage?) {
                 if (message.toString().contains("OFF",false)){
-                    val devices:ModelDevices = ModelDevices(null,null,topic?.replace("report","")?.trim(),null,false)
+                    val devices:ModelDevices = ModelDevices(null,null,topic?.replace("report","")?.trim(),null,false,getrssi(message))
                     view?.dataChange(devices,false)
                 }else if (message.toString().contains("ON",false)){
-                    val devices:ModelDevices = ModelDevices(null,null, topic?.replace("report","")?.trim(),null,true)
+                    val devices:ModelDevices = ModelDevices(null,null, topic?.replace("report","")?.trim(),null,true,getrssi(message))
                     view?.dataChange(devices,true)
                 }else{
                     view?.MainToast(context.getString(R.string.unknown_message))

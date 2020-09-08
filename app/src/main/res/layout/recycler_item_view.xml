@@ -17,12 +17,19 @@
 
     <Switch
         android:id="@+id/list_Switch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.5"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="20dp"
+        android:layout_weight="0.5"
         android:checked="true"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textColor="@color/verde1"
+        android:textStyle="normal"
+        android:textScaleX="1"
+        android:textAlignment="center"
         android:onClick="onClickList"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 

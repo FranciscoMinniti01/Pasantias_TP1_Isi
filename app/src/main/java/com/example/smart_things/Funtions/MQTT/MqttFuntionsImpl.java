@@ -9,6 +9,7 @@ import org.eclipse.paho.client.mqttv3.MqttCallback;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
+import org.eclipse.paho.client.mqttv3.MqttPersistenceException;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -76,6 +77,12 @@ public class MqttFuntionsImpl implements MQTTinterface  {
                     client.publish(topic, "OFF".getBytes(), 0, false);
                 }
                 listener.AutheonSuccessful();
+            }catch (Exception e) {
+                listener.AutheonFailure(e.getMessage());
+            }
+        }else if (Type == "join"){
+            try {
+                client.publish(topic, "all".getBytes(), 0, false);
             }catch (Exception e) {
                 listener.AutheonFailure(e.getMessage());
             }

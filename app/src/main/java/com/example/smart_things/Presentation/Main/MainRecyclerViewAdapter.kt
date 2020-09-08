@@ -49,6 +49,7 @@ class MainRecyclerViewAdapter(private val context: Context, private val onRecycl
                 val modelDevices = ModelDevices(item.Room,item.Floor,item.Name,item.Type,item.State)
                 itemView.list_Switch.setOnClickListener{onRecycleClickListener.onSwitchClick(modelDevices/*item*/,itemView.list_Switch.isChecked)}
                 itemView.list_Switch.isChecked = item.State
+                itemView.list_Switch.text = item.RSSI
                 itemView.List_Button.text = item.Name
                 itemView.List_Button.textAlignment = Gravity.LEFT
             }else if (!item.Room.isNullOrEmpty()){

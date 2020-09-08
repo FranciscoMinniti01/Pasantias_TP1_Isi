@@ -144,6 +144,11 @@ class MainActivity : AppCompatActivity(), MainInterface.MainView,
                 MainToast(getString(R.string.Not_exits_devise))
             }
         }
+        joiner_buttom.setOnClickListener{
+            if (presenter.isConeccted()){
+                presenter.publis("joinDevices","join","all")
+            }
+        }
     }
 
     override fun SherchDevise(Name: String):Int? {
@@ -171,7 +176,11 @@ class MainActivity : AppCompatActivity(), MainInterface.MainView,
         var position_devise = SherchDevise(Devise.Name!!)
         if(position_devise != null) {
             if (DeviseListModel[position_devise].State != state) {
-                DeviseListModel.set(position_devise,ModelDevices(Devise.Room, Devise.Floor, Devise.Name, Devise.Type, state))
+                DeviseListModel.set(position_devise,ModelDevices(Devise.Room, Devise.Floor, Devise.Name, Devise.Type, state,Devise.RSSI))
+                adapter.notifyItemChanged(position_devise)
+            }
+            if (!DeviseListModel[position_devise].RSSI.isNullOrEmpty()){
+                DeviseListModel.set(position_devise,ModelDevices(Devise.Room, Devise.Floor, Devise.Name, Devise.Type, state,Devise.RSSI))
                 adapter.notifyItemChanged(position_devise)
             }
         }else{
