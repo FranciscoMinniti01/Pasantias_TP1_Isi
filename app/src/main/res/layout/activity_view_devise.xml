@@ -145,6 +145,16 @@
 
             <Space
                 android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <WebView
+                android:id="@+id/webviewid"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                tools:ignore="WebViewLayout" />
+
+            <Space
+                android:layout_width="match_parent"
                 android:layout_height="200dp" />
 
 

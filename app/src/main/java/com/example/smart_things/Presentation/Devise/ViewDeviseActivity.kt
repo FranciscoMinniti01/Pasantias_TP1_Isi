@@ -1,5 +1,6 @@
 package com.example.smart_things.Presentation.Devise
 
+import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.app.Dialog
 import android.content.Context
@@ -7,6 +8,9 @@ import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.webkit.WebChromeClient
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import com.example.smart_things.Class.ModelDevices
 import com.example.smart_things.Class.ModelUser
 import com.example.smart_things.Funtions.CloudFirebase.CloudFirebaseImpl
@@ -21,6 +25,7 @@ class ViewDeviseActivity : AppCompatActivity(),ViewDeviseInterface.DeviseView {
 
     lateinit var ViewPresenter:ViewDevisePresente
 
+    @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_devise)
@@ -31,6 +36,18 @@ class ViewDeviseActivity : AppCompatActivity(),ViewDeviseInterface.DeviseView {
         Buttoms()
         getInstance()
         viewData()
+
+        webviewid.webChromeClient = object  : WebChromeClient(){
+
+        }
+        webviewid.webViewClient = object  : WebViewClient(){
+
+        }
+
+        val settings = webviewid.settings
+        settings.javaScriptEnabled = true
+
+        webviewid.loadUrl("http://192.168.0.50/emoncms/vis/realtime?feedid=3&colour=edc240&kw=0&embed=1")
 
     }
 

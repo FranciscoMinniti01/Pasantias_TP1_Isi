@@ -76,9 +76,9 @@
 
             <EditText
                 android:id="@+id/edit_add_flow"
+                style="@style/edit_view"
                 android:backgroundTint="@color/naranja_O"
-                android:hint="@string/add_edit_flow"
-                style="@style/edit_view" />
+                android:hint="@string/add_edit_flow" />
 
             <Space
                 android:layout_width="match_parent"
